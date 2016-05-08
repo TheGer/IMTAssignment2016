@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
@@ -11,7 +11,7 @@ public class playerController : MonoBehaviour {
 	float shrinkSize = 0.5f;
 	float normalSize = 1f;
 
-	public float jumpHeight;
+	public float jumpHeight = 450f;
 	public float megaJumpHeight;
 
 	private int count;
