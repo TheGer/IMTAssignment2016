@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/BonesSceens/rib.unity
+  isLoaded: 1
+  isActive: 1

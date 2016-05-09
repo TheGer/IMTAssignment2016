@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 491a66a6b6961d84da9bfd11b64e6676
+timeCreated: 1462195011
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: tooth:exterior
+    100004: VPVP1236:l1disc
+    100006: VPVP1236:l2disc
+    100008: VPVP1236:l3disc
+    100010: VPVP1236:l4disc
+    100012: VPVP1236:l5disc
+    100014: VPVP1236:lumbar1
+    100016: VPVP1236:lumbar2
+    100018: VPVP1236:lumbar3
+    100020: VPVP1236:lumbar4
+    100022: VPVP1236:lumbar5
+    100024: VPVP1237:l1disc
+    100026: VPVP1237:l2disc
+    100028: VPVP1237:l3disc
+    100030: VPVP1237:l4disc
+    100032: VPVP1237:l5disc
+    100034: VPVP1237:lumbar1
+    100036: VPVP1237:lumbar2
+    100038: VPVP1237:lumbar3
+    100040: VPVP1237:lumbar4
+    100042: VPVP1237:lumbar5
+    400000: //RootNode
+    400002: tooth:exterior
+    400004: VPVP1236:l1disc
+    400006: VPVP1236:l2disc
+    400008: VPVP1236:l3disc
+    400010: VPVP1236:l4disc
+    400012: VPVP1236:l5disc
+    400014: VPVP1236:lumbar1
+    400016: VPVP1236:lumbar2
+    400018: VPVP1236:lumbar3
+    400020: VPVP1236:lumbar4
+    400022: VPVP1236:lumbar5
+    400024: VPVP1237:l1disc
+    400026: VPVP1237:l2disc
+    400028: VPVP1237:l3disc
+    400030: VPVP1237:l4disc
+    400032: VPVP1237:l5disc
+    400034: VPVP1237:lumbar1
+    400036: VPVP1237:lumbar2
+    400038: VPVP1237:lumbar3
+    400040: VPVP1237:lumbar4
+    400042: VPVP1237:lumbar5
+    2300000: tooth:exterior
+    2300002: VPVP1236:l1disc
+    2300004: VPVP1236:l2disc
+    2300006: VPVP1236:l3disc
+    2300008: VPVP1236:l4disc
+    2300010: VPVP1236:l5disc
+    2300012: VPVP1236:lumbar1
+    2300014: VPVP1236:lumbar2
+    2300016: VPVP1236:lumbar3
+    2300018: VPVP1236:lumbar4
+    2300020: VPVP1236:lumbar5
+    2300022: VPVP1237:l1disc
+    2300024: VPVP1237:l2disc
+    2300026: VPVP1237:l3disc
+    2300028: VPVP1237:l4disc
+    2300030: VPVP1237:l5disc
+    2300032: VPVP1237:lumbar1
+    2300034: VPVP1237:lumbar2
+    2300036: VPVP1237:lumbar3
+    2300038: VPVP1237:lumbar4
+    2300040: VPVP1237:lumbar5
+    2300042: //RootNode
+    3300000: tooth:exterior
+    3300002: VPVP1236:l1disc
+    3300004: VPVP1236:l2disc
+    3300006: VPVP1236:l3disc
+    3300008: VPVP1236:l4disc
+    3300010: VPVP1236:l5disc
+    3300012: VPVP1236:lumbar1
+    3300014: VPVP1236:lumbar2
+    3300016: VPVP1236:lumbar3
+    3300018: VPVP1236:lumbar4
+    3300020: VPVP1236:lumbar5
+    3300022: VPVP1237:l1disc
+    3300024: VPVP1237:l2disc
+    3300026: VPVP1237:l3disc
+    3300028: VPVP1237:l4disc
+    3300030: VPVP1237:l5disc
+    3300032: VPVP1237:lumbar1
+    3300034: VPVP1237:lumbar2
+    3300036: VPVP1237:lumbar3
+    3300038: VPVP1237:lumbar4
+    3300040: VPVP1237:lumbar5
+    3300042: //RootNode
+    4300000: VPVP1236:l5disc
+    4300002: VPVP1236:lumbar5
+    4300004: VPVP1236:l4disc
+    4300006: VPVP1236:lumbar4
+    4300008: VPVP1236:l3disc
+    4300010: VPVP1236:lumbar3
+    4300012: VPVP1236:l2disc
+    4300014: VPVP1236:lumbar2
+    4300016: VPVP1236:l1disc
+    4300018: VPVP1236:lumbar1
+    4300020: VPVP1237:l5disc
+    4300022: VPVP1237:lumbar5
+    4300024: VPVP1237:l4disc
+    4300026: VPVP1237:lumbar4
+    4300028: VPVP1237:l3disc
+    4300030: VPVP1237:lumbar3
+    4300032: VPVP1237:l2disc
+    4300034: VPVP1237:lumbar2
+    4300036: VPVP1237:l1disc
+    4300038: VPVP1237:lumbar1
+    4300040: tooth:exterior
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
