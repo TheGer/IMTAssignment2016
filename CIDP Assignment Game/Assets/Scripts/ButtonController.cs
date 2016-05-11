@@ -69,7 +69,12 @@ public class ButtonController : MonoBehaviour {
 
 	public void QuitButton()
 	{
-		Application.LoadLevel ("quit");
+		Application.LoadLevel("quit");
+	}
+
+	public void yesButton()
+	{
+		Application.Quit();
 	}
 
 	public void noButton()

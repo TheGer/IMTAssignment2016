@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class CarController : MonoBehaviour {
 
 	private Rigidbody carRB;
-	private float speed = 30f;
+	private float speed = 35f;
 	private ScoreGenerator scoreGenerator;
 	private float batteryPerSecond = 1f;
 
