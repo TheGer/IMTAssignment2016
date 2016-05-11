@@ -48,11 +48,23 @@ public class Control : MonoBehaviour {
 			pos.y = -7.6f;
 			transform.position = pos;
 		}
+		if (transform.position.y > 1f) {
+			Vector3 pos = transform.position;
+			pos.y = 1f;
+			transform.position = pos;
+		}
 		if (transform.position.x <= -12.1f) {
 			Vector3 pos = transform.position;
 			pos.x = -12.1f;
 			transform.position = pos;
 		}
+		if (transform.position.x > 12f) {
+			Vector3 pos = transform.position;
+			pos.x = 12f;
+			transform.position = pos;
+		}
+
+	
 	}
 
 
