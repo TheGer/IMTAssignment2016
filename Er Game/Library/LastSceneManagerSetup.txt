@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/BodySceens/DigestiveOrgans.unity
+  isLoaded: 1
+  isActive: 1
