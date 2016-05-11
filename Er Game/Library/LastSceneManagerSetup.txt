@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/BodySceens/DigestiveOrgans.unity
+- path: Assets/Help sceens/HelpBrain.unity
   isLoaded: 1
   isActive: 1
