@@ -7,11 +7,6 @@ public class buttonmanager : MonoBehaviour
 {
     public Animation animation;
 
-
-
-
-
-
     //code which is triggered when the button is pressed
 
 
@@ -19,17 +14,25 @@ public class buttonmanager : MonoBehaviour
     public void mainmenutogameselection()
     {
         Application.LoadLevel("levelselection");
-        if (Input.GetButtonDown(""))
-        {
-            animation.Play("Playbuttonanim");
-
-        }
+       
 
     }
     // code which is triggered when the previosu button is pressed
     public void levelslectioneasy()
     {
         Application.LoadLevel("gamewolflevel1");
+    }
+
+
+    public void stopSpinningButtonPressed()
+    {
+        GetComponent<Animator>().SetTrigger("run");
+    }
+
+
+    public void runifButtonPressed()
+    {
+        GetComponent<Animator>().SetTrigger("run");
     }
 
     public void levelselectionhard()
