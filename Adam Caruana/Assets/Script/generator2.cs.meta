@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cc06bb464cc275a459d29673405a77ba
+timeCreated: 1460469315
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - box: {fileID: 184144, guid: e98ba156e5f8aa144b09c0937125d7f2, type: 2}
+  - cone: {fileID: 157730, guid: 6bdde69d2f3e30e4d9b490fdc37fcb71, type: 2}
+  - trashcan1: {fileID: 150474, guid: 68c901bddae51b544a2fb6d47ec9d48f, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

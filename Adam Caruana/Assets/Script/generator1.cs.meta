@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: decbf8e011e13984cb218638c7e870ce
+timeCreated: 1460466679
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - wood1: {fileID: 115934, guid: 2b9c0f2d1afdc6d4babc15d119c1223a, type: 2}
+  - wood2: {fileID: 106880, guid: 84f6f79574c2be84594b9ea8a534fa40, type: 2}
+  - pipe: {fileID: 187504, guid: de93413979c0adb4c8dc715d0fcf13c7, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 994e4985674e25f46808a8ed26416428
+timeCreated: 1460452776
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - cannon: {fileID: 100000, guid: 9e67dbd5ed1d04f4f97dad99aee10d83, type: 2}
+  - coin: {fileID: 100000, guid: ddeacfa2213571d4fbe650f091d420a0, type: 2}
+  - coinbag: {fileID: 100000, guid: b41c97e8ae859d54eb7458e2deb97579, type: 2}
+  - coinchest: {fileID: 100000, guid: 8f74c210c31833c4cba49ec850cf9712, type: 2}
+  - Trashcan: {fileID: 171836, guid: 4911347aaf88a1c4aa3818e760be5ace, type: 2}
+  - tincan: {fileID: 190040, guid: 29be453e9e875904a91158365f665524, type: 2}
+  - tincan2: {fileID: 143870, guid: c70dd79a76ea5704a961d66d1eddb86f, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
