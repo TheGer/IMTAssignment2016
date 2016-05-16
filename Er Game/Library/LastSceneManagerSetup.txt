@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Help sceens/HelpBrain.unity
+- path: Assets/MainGameSceens/Main Menu.unity
   isLoaded: 1
   isActive: 1
