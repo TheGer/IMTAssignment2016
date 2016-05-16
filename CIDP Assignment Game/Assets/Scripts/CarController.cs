@@ -19,6 +19,9 @@ public class CarController : MonoBehaviour {
 	public AudioClip BatterySound;
 	private AudioSource audioSource;
 
+	public float minBounds;
+	public float maxBounds;
+
 	void Awake () {
 
 		carRB = GetComponent <Rigidbody> ();
@@ -79,6 +82,17 @@ public class CarController : MonoBehaviour {
 		if (horizontal != 0 || vertical != 0)
 			carRB.MovePosition (transform.position + ((Vector3.forward * vertical) + (Vector3.right * horizontal )) * speed * Time.deltaTime);
 
+		if (transform.position.x < minBounds) {
+			Vector3 pos = transform.position;
+			pos.x = minBounds;
+			transform.position = pos;
+		}
+
+		if (transform.position.x > maxBounds) {
+			Vector3 pos = transform.position;
+			pos.x = maxBounds;
+			transform.position = pos;
+		}
 
 		scoreGenerator.Battery (-(batteryPerSecond * Time.fixedDeltaTime));
 

@@ -6,13 +6,13 @@ public class ObjectGenerator : MonoBehaviour {
 	public GameObject[] objects;
 	public Transform car;
 	public int maxObjects;
+
 	public float distance = 20f;
 
 	
 	void Start () {
 		
 		StartCoroutine ("GenerateObject");
-		
 	}
 	
 	
@@ -30,4 +30,5 @@ public class ObjectGenerator : MonoBehaviour {
 			yield return new WaitForSeconds (1f);
 		}
 	}
+	
 }
