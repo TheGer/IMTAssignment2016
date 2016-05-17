@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 359f875658a9e13428213c80ec3ae2f2
+timeCreated: 1461665341
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - gigi: {fileID: 8293636, guid: f0204e74cedffeb48b86b83ea5dcfb11, type: 2}
+  - gigi1: {fileID: 8293636, guid: f0204e74cedffeb48b86b83ea5dcfb11, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
