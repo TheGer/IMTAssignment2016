@@ -89,12 +89,18 @@ public class wolfcontrols1 : MonoBehaviour
         {
             Destroy(other.gameObject);
             Hp += 5;
+
+            audio.clip = CollectingHeath;
+            audio.Play();
         }
 
         if (other.gameObject.tag == "timepickup")
         {
             Destroy(other.gameObject);
-            GameObject.FindObjectOfType<Timer>().ExtendTime(25);  
+            GameObject.FindObjectOfType<Timer>().ExtendTime(25);
+
+            audio.clip = CollectiongExtraTime;
+            audio.Play();
         }
 
 
@@ -131,8 +137,19 @@ public class wolfcontrols1 : MonoBehaviour
         //////
         if (Input.GetKeyDown("space"))
         {
-            transform.Translate(Vector3.up * 30 * Time.deltaTime, Space.World);
+            transform.Translate(Vector3.up * 40 * Time.deltaTime, Space.World);
         }
+        
+         if (Input.GetButtonDown("Fire1"))//onclick
+        {
+            transform.Translate(Vector3.up *  50 * Time.deltaTime, Space.World); 
+        }
+        if (Input.GetButton("Fire2"))// if button is held the character will keep on flying 
+        {
+            transform.Translate(Vector3.up * 10 * Time.deltaTime, Space.World);
+        }
+
+
         ///////
     }
    

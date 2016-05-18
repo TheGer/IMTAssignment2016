@@ -102,6 +102,10 @@ public class wolfcontrols2 : MonoBehaviour
         {
             transform.Translate(Vector3.up * 30 * Time.deltaTime, Space.World);
         }
+        if (Input.GetButton("Fire1"))//onclick
+        {
+            transform.Translate(Vector3.up * 30 * Time.deltaTime, Space.World);
+        }
         ///////
     }
    

@@ -55,6 +55,10 @@ public class buttonmanager : MonoBehaviour
     {
         Application.LoadLevel("pccontrols");
     }
+    public void viewyourcharacter()
+    {
+        Application.LoadLevel("test");
+    }
     public void smartphoneinstructions()
     {
         Application.LoadLevel("phonecontrols1");
