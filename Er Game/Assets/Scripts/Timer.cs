@@ -42,7 +42,7 @@ public class Timer : MonoBehaviour
 
     public void TimeButton()
     {
-        maxTime =  +200f;
+        maxTime =  +30f;
     }
 
 
