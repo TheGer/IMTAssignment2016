@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
 
     public Text timerText;
     private float startTime;
-    private float maxTime = 100f;
+    private float maxTime = 20f;
  
 
     // Use this for initialization

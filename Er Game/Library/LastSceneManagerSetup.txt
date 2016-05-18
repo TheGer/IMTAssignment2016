@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/MainGameSceens/game.unity
-=======
 - path: Assets/MainGameSceens/Main Menu.unity
->>>>>>> parent of 5f9de68... Revert "Edit a text"
   isLoaded: 1
   isActive: 1
