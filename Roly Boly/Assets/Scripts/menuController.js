@@ -4,9 +4,7 @@
 		Application.LoadLevel(3);
 	}
 	
-    function backToMenu (){
-        Application.LoadLevel(0);
-    }
+
 
     function controls (){
         Application.LoadLevel(1);
