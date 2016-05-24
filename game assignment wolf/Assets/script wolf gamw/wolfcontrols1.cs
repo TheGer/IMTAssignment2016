@@ -18,20 +18,12 @@ public class wolfcontrols1 : MonoBehaviour
     public AudioClip buttonssounds;
     private AudioClip audioSource;
 
-   
-
-
-
-    
-
 
     public Text ShowScore;
     public Text ShowHP;
     public Text ShowTime;
 
     private AudioSource audio;
-
-   
 
 
     void Awake()
@@ -45,10 +37,7 @@ public class wolfcontrols1 : MonoBehaviour
 
         ShowScore.text = "Score: " + Score;
         ShowHP.text = "Health: " + Hp;
-        ShowTime.text = "Time: " + timeleft; 
-       
-
-
+        ShowTime.text = "Time: " + timeleft;
 
     }
     void OnTriggerEnter(Collider other)
@@ -62,6 +51,15 @@ public class wolfcontrols1 : MonoBehaviour
 
         }
 
+        if (other.gameObject.tag == "logs")
+        {
+            Hp -= 10;
+
+            audio.clip = CollisionwithLogs;
+            audio.Play();
+
+        }
+
         if (other.gameObject.tag == "obsticle")
         {
             Hp -= 10;
@@ -70,10 +68,6 @@ public class wolfcontrols1 : MonoBehaviour
             audio.Play();
 
         }
-
-
-
-
 
         if (other.gameObject.tag == "Score_Pickup")
         {
@@ -139,10 +133,10 @@ public class wolfcontrols1 : MonoBehaviour
         {
             transform.Translate(Vector3.up * 40 * Time.deltaTime, Space.World);
         }
-        
-         if (Input.GetButtonDown("Fire1"))//onclick
+
+        if (Input.GetButtonDown("Fire1"))//onclick
         {
-            transform.Translate(Vector3.up *  50 * Time.deltaTime, Space.World); 
+            transform.Translate(Vector3.up * 50 * Time.deltaTime, Space.World);
         }
         if (Input.GetButton("Fire2"))// if button is held the character will keep on flying 
         {
@@ -152,6 +146,6 @@ public class wolfcontrols1 : MonoBehaviour
 
         ///////
     }
-   
+
 
 }
