@@ -136,12 +136,12 @@ public class wolfcontrols1 : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))//onclick
         {
-            transform.Translate(Vector3.up * 50 * Time.deltaTime, Space.World);
+            transform.Translate(Vector3.up * 30 * Time.deltaTime, Space.World);
         }
-        if (Input.GetButton("Fire2"))// if button is held the character will keep on flying 
-        {
-            transform.Translate(Vector3.up * 10 * Time.deltaTime, Space.World);
-        }
+      //  if (Input.GetButton("Fire2"))// if button is held the character will keep on flying 
+        //{
+         //   transform.Translate(Vector3.up * 10 * Time.deltaTime, Space.World);
+        //}
 
 
         ///////
