@@ -18,7 +18,7 @@ public class CollerController : MonoBehaviour {
 
         if (otherObject.tag == "Heart")
         {
-            //score goes up by one when Hear
+            //score goes up by one when Heart
             score.addscore();
             Destroy(otherObject.gameObject);
         }
@@ -51,7 +51,7 @@ public class CollerController : MonoBehaviour {
 
             Debug.Log(cooler);
 
-            //to keep the y position of bart, we only use the X
+            //to keep the y position of the ice cooler, we only use the X
             transform.position = new Vector3(cooler.x, transform.position.y, 0);
 
         

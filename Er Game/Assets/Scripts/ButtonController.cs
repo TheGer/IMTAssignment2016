@@ -3,6 +3,13 @@ using System.Collections;
 
 public class ButtonController : MonoBehaviour {
 
+    // this code basically loads the scenes when on clicked
+
+    public void mainmenu()
+    {
+        Application.LoadLevel(2);
+    }
+
     public void ButtonSpace()
     {
         Application.LoadLevel("Instructions");

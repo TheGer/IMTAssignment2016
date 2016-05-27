@@ -9,6 +9,7 @@ public class Sound : MonoBehaviour {
     // Use this for initialization
     public void heartsound()
     {
+        // this code stores the audio source in it and when the user presses the button "play sound" it will play the sound 
         this.gameObject.AddComponent<AudioSource>();
         this.GetComponent<AudioSource>().clip = myclip;
         this.GetComponent<AudioSource>().Play();
@@ -16,6 +17,7 @@ public class Sound : MonoBehaviour {
 
     public void Intestines()
     {
+        // this code stores the audio source in it and when the user presses the button "play sound" it will play the sound 
         this.gameObject.AddComponent<AudioSource>();
         this.GetComponent<AudioSource>().clip = myclip;
         this.GetComponent<AudioSource>().Play();
@@ -23,6 +25,7 @@ public class Sound : MonoBehaviour {
 
     public void Lungs()
     {
+        // this code stores the audio source in it and when the user presses the button "play sound" it will play the sound 
         this.gameObject.AddComponent<AudioSource>();
         this.GetComponent<AudioSource>().clip = myclip;
         this.GetComponent<AudioSource>().Play();
@@ -30,6 +33,7 @@ public class Sound : MonoBehaviour {
 
     public void Stomach()
     {
+        // this code stores the audio source in it and when the user presses the button "play sound" it will play the sound 
         this.gameObject.AddComponent<AudioSource>();
         this.GetComponent<AudioSource>().clip = myclip;
         this.GetComponent<AudioSource>().Play();
@@ -37,6 +41,7 @@ public class Sound : MonoBehaviour {
 
     public void eye()
     {
+        // this code stores the audio source in it and when the user presses the button "play sound" it will play the sound 
         this.gameObject.AddComponent<AudioSource>();
         this.GetComponent<AudioSource>().clip = myclip;
         this.GetComponent<AudioSource>().Play();

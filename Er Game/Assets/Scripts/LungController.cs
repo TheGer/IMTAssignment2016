@@ -7,7 +7,7 @@ public class LungController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//random number bejn 1 - 3
+		//speed number will be 3
 		speed = 3f;
 	}
 	
@@ -17,7 +17,7 @@ public class LungController : MonoBehaviour {
 			(Vector3.down * speed * Time.deltaTime);
 
 		if (transform.position.y < -10) {
-			//delete the orangeJuice
+			//delete the lung
 			Destroy(this.gameObject);
 		}
 	}

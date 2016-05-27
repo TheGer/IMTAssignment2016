@@ -4,9 +4,9 @@ using System.Collections;
 public class GameBonusController : MonoBehaviour
 {
 
-    public GameObject apple;
-    public GameObject beercan;
-    public GameObject plustime;
+    public GameObject hearts;
+    public GameObject lungs;
+    public GameObject intestines;
 
     public int numberOfObjects;
 
@@ -35,8 +35,8 @@ public class GameBonusController : MonoBehaviour
             if (objectChooser == 1)
             {
 
-                //make a apple
-                Instantiate(apple, new Vector3(xposition, 10.5f, 0), Quaternion.identity);
+                //creates a heart in the starting postion of 10.5f, 0 .
+                Instantiate(hearts, new Vector3(xposition, 10.5f, 0), Quaternion.identity);
 
             }
 
@@ -44,22 +44,21 @@ public class GameBonusController : MonoBehaviour
             if (objectChooser == 2)
             {
 
-                //make a beercan
-                Instantiate(beercan, new Vector3(xposition, 8.5f, 0), Quaternion.identity);
+                //creates a lung in the starting postion of 8.5f, 0 .
+                Instantiate(lungs, new Vector3(xposition, 8.5f, 0), Quaternion.identity);
 
             }
 
             if (objectChooser == 3)
             {
 
-                //make a starfish
-                Instantiate(plustime, new Vector3(xposition, 6.5f, 0), Quaternion.identity);
+                //creates a intestine in the starting postion of 6.5f, 0 .
+                Instantiate(intestines, new Vector3(xposition, 6.5f, 0), Quaternion.identity);
 
             }
 
             counter++;
-            //will wait one second and then create something 
-            //else
+            //will wait two second and then create another object 
             yield return new WaitForSeconds(2f);
         } while (counter < numberOfObjects);
 

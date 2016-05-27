@@ -1,13 +1,13 @@
 fileFormatVersion: 2
 guid: 3d1967b5303ead84aa8ecb11770a0130
-timeCreated: 1462533733
+timeCreated: 1464087900
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
   defaultReferences:
-  - apple: {fileID: 169026, guid: 6bb2f96de2a72484293b96535f123faa, type: 2}
-  - beercan: {fileID: 188502, guid: 92c07d5a321b7a94cabcf73bddb8ebf2, type: 2}
-  - plustime: {fileID: 188502, guid: 92c07d5a321b7a94cabcf73bddb8ebf2, type: 2}
+  - heart: {instanceID: 0}
+  - lungs: {instanceID: 0}
+  - Intestines: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

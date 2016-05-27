@@ -3,6 +3,8 @@ using System.Collections;
 
 public class HelpController : MonoBehaviour {
 
+    // this code is basically to load the help scenes when the help button is pressed
+
     public void HelpHeart()
     {
         Application.LoadLevel(4);
