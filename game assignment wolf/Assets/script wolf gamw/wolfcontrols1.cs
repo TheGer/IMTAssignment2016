@@ -24,11 +24,15 @@ public class wolfcontrols1 : MonoBehaviour
     public Text ShowTime;
 
     private AudioSource audio;
+    private Rigidbody rb;
 
 
     void Awake()
     {
         audio = GetComponent<AudioSource>();
+        rb = GetComponent<Rigidbody>();
+
+
 
     }
 
@@ -38,6 +42,8 @@ public class wolfcontrols1 : MonoBehaviour
         ShowScore.text = "Score: " + Score;
         ShowHP.text = "Health: " + Hp;
         ShowTime.text = "Time: " + timeleft;
+
+
 
     }
     void OnTriggerEnter(Collider other)
@@ -103,6 +109,10 @@ public class wolfcontrols1 : MonoBehaviour
 
     void Update()
     {
+
+        bool isGrounded = Physics.Raycast(transform.position, Vector3.down, 1f, 1 << LayerMask.NameToLayer("Ground"));
+        print(isGrounded);
+
         if (Hp <= 0f)
         {
             SceneManager.LoadScene("gameoverlives0");
@@ -123,20 +133,15 @@ public class wolfcontrols1 : MonoBehaviour
         platePosition = Camera.main.ScreenToWorldPoint(
             new Vector3(mouseX, 0, 10f));
 
-        Debug.Log(platePosition);
+        //Debug.Log(platePosition);
 
         //to keep the y position of the plate, we only use the X
-        transform.position =
-            new Vector3(platePosition.x, transform.position.y, 0);
+        transform.position = new Vector3(platePosition.x, transform.position.y, 0);
         //////
-        if (Input.GetKeyDown("space"))
-        {
-            transform.Translate(Vector3.up * 40 * Time.deltaTime, Space.World);
-        }
 
-        if (Input.GetButtonDown("Fire1"))//onclick
+        if (isGrounded && (Input.GetKeyDown("space")  || Input.GetButtonDown("Fire1")))//onclick
         {
-            transform.Translate(Vector3.up * 30 * Time.deltaTime, Space.World);
+            rb.AddForce(Vector3.up * 220f);
         }
       //  if (Input.GetButton("Fire2"))// if button is held the character will keep on flying 
         //{
@@ -146,6 +151,7 @@ public class wolfcontrols1 : MonoBehaviour
 
         ///////
     }
+
 
 
 }

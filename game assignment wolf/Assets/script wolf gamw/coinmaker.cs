@@ -14,9 +14,7 @@ public class coinmaker : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
-
-
+        
         transform.position = new Vector3(ranXPos, spawnPoint.y, spawnPoint.z);
         camPos = GameObject.Find("Main Camera").GetComponent<Transform>();
 

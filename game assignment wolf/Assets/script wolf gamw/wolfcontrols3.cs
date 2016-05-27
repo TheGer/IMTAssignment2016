@@ -75,24 +75,17 @@ public class wolfcontrols3 : MonoBehaviour
         if (Hp <= 0f)
         {
             SceneManager.LoadScene("gameoverlives0");
-
         }
-
-
         //if the game has been running longer than length of game
 
         float mouseX;
-
         //mouse position
         mouseX = Input.mousePosition.x;
 
-
-
-        Vector3 platePosition;
+         Vector3 platePosition;
 
         platePosition = Camera.main.ScreenToWorldPoint(
-            new Vector3(mouseX, 0, 10f));
-
+        new Vector3(mouseX, 0, 10f));
         Debug.Log(platePosition);
 
         //to keep the y position of the plate, we only use the X
@@ -107,8 +100,7 @@ public class wolfcontrols3 : MonoBehaviour
         {
             transform.Translate(Vector3.up * 30 * Time.deltaTime, Space.World);
         }
-        ///////
-    }
+      }
    
 
 }
