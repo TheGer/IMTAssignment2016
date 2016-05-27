@@ -5,98 +5,71 @@ public class HelpController : MonoBehaviour {
 
     // this code is basically to load the help scenes when the help button is pressed
 
+    public GameObject healthPanel;
+
     public void HelpHeart()
     {
-        Application.LoadLevel(4);
+        healthPanel.SetActive(true);
     }
 
-    public void HelpHeartButton()
+
+    public void BackButton()
     {
-        Application.LoadLevel(19);
+        healthPanel.SetActive(false);
     }
 
 
     public void HelpOrgans()
     {
-        Application.LoadLevel(5);
-    }
-    public void HelpOrangsButton()
-    {
-        Application.LoadLevel(20);
+        healthPanel.SetActive(true);
     }
 
 
     public void HelpLungs()
     {
-        Application.LoadLevel(6);
+        healthPanel.SetActive(true);
     }
-    public void HelpLungsButton()
-    {
-        Application.LoadLevel(21);
-    }
+
 
     public void Helpstomach()
     {
-        Application.LoadLevel(7);
+        healthPanel.SetActive(true);
     }
-    public void HelpstomachButton()
-    {
-        Application.LoadLevel(22);
-    }
+
 
 
     public void HelpBrain()
     {
-        Application.LoadLevel(11);
+        healthPanel.SetActive(true);
     }
-    public void HelpBrainButton()
-    {
-        Application.LoadLevel(23);
-    }
+
 
     public void Helpeye()
     {
-        Application.LoadLevel(9);
-    }
-    public void HelpeyeButton()
-    {
-        Application.LoadLevel(24);
+        healthPanel.SetActive(true);
     }
 
     public void Helptooth()
     {
-        Application.LoadLevel(10);
+        healthPanel.SetActive(true);
     }
-    public void HelptoothButton()
-    {
-        Application.LoadLevel(25);
-    }
+
 
     public void Helpspinal()
     {
-        Application.LoadLevel(13);
+        healthPanel.SetActive(true);
     }
-    public void HelpspinalButton()
-    {
-        Application.LoadLevel(26);
-    }
+
 
     public void HelpSkull()
     {
-        Application.LoadLevel(14);
+        healthPanel.SetActive(true);
     }
-    public void HelpSkullButton()
-    {
-        Application.LoadLevel(27);
-    }
+
 
     public void HelpRib()
     {
-        Application.LoadLevel(15);
-    }
-    public void HelpRibButton()
-    {
-        Application.LoadLevel(28);
+        healthPanel.SetActive(true);
     }
 
 

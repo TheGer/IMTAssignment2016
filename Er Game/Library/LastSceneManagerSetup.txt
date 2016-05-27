@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/HeadSceens/Brain.unity
+- path: Assets/BonesSceens/IntroBones.unity
   isLoaded: 1
   isActive: 1
