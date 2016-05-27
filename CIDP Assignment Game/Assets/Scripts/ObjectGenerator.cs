@@ -15,7 +15,7 @@ public class ObjectGenerator : MonoBehaviour {
 		StartCoroutine ("GenerateObject");
 	}
 	
-	
+	//this function generates the objects in a random manner within a fixed parameter
 	IEnumerator GenerateObject () {
 		
 		while (GameObject.FindGameObjectsWithTag ("object").Length < maxObjects) {
@@ -27,7 +27,7 @@ public class ObjectGenerator : MonoBehaviour {
 			
 			GameObject item = (GameObject)Instantiate (target, pos, Quaternion.identity);
 			
-			yield return new WaitForSeconds (1f);
+			yield return new WaitForSeconds (1.5f);
 		}
 	}
 	

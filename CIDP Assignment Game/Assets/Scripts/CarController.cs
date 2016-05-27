@@ -12,6 +12,7 @@ public class CarController : MonoBehaviour {
 	public float horizontal = 0f;
 	public float vertical = 0f;
 
+	public GameObject explosion;
 
 	public AudioClip CollectingCoin;
 	public AudioClip CollectingHealthPack;
@@ -22,14 +23,16 @@ public class CarController : MonoBehaviour {
 	public float minBounds;
 	public float maxBounds;
 
+	// the purpose of this function is to call out these particular components
 	void Awake () {
 
 		carRB = GetComponent <Rigidbody> ();
 		scoreGenerator = GetComponent <ScoreGenerator> ();
 		audioSource = GetComponent <AudioSource> ();
+
 	}
 
-
+	// this function is used so that the object tag can add the following commands listed for each object.
 	void OnTriggerEnter(Collider other) {
 
 		if (other.tag == "object") {
@@ -54,6 +57,7 @@ public class CarController : MonoBehaviour {
 				scoreGenerator.AddHealth (-1);
 				audioSource.clip = CarCrash;
 				audioSource.Play ();
+				Instantiate (explosion, transform.position, Quaternion.identity);
 				break;
 
 			case ObjectType.Battery:
@@ -70,7 +74,7 @@ public class CarController : MonoBehaviour {
 
 	}
 
-
+	// this is the function that is used to control the car movement to move horizontal and vertical
 	void FixedUpdate () {
 
 		float h = Input.GetAxisRaw ("Horizontal");

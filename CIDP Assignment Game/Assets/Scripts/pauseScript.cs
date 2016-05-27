@@ -32,7 +32,8 @@ public class pauseScript : MonoBehaviour {
 		}
 
 	}
-
+	//this function enables the use of a pause button in the game. 
+	//It is coded so whenever the button is pressed the game is paused and when it released the game will continue
 	public void pausebutton () {
 		
 		
