@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f9c16ca1164fe0745bfdee5dc6018fb3
+timeCreated: 1462273716
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - rb: {instanceID: 0}
+  - redPill: {fileID: 2100000, guid: 6d07bf593adf6fb4498c99cb910b4e5e, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
