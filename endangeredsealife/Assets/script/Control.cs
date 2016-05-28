@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Control : MonoBehaviour {
 
+	Animator animator;
+
 	public EnvironmentScript environment;
 
 	public AudioClip fallingClip;
@@ -13,6 +15,7 @@ public class Control : MonoBehaviour {
 	public AudioClip scoreClip;
 	public AudioClip boostClip;
 	private AudioSource audioSource;
+
 
 	public int maxLives;
 	public int lives = 5;
@@ -27,14 +30,18 @@ public class Control : MonoBehaviour {
 
 	void Awake () {
 		audioSource = GetComponent <AudioSource> ();
+		animator = GetComponent <Animator> ();
+
 	}
 
 	void Start () {
 		State.IsLastLevel = isLastLevel;
 		State.CurrentLevel = SceneManager.GetActiveScene ().buildIndex;
 		State.Scores.Add (currentScore);
-		UpdateUI ();	
+		UpdateUI ();
+	
 	}
+		
 
 	void Update (){
 		transform.Translate (Vector3.right * 20f * Input.GetAxis ("Horizontal")*Time.deltaTime);
@@ -101,6 +108,7 @@ public class Control : MonoBehaviour {
 				lives--;
 				audioSource.clip = fallingClip;
 				audioSource.Play ();
+				animator.SetTrigger ("explode");
 				break;
 
 			case ObjectType.Boostpack:
