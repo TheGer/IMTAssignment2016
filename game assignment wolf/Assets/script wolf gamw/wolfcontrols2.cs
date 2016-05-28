@@ -6,22 +6,33 @@ public class wolfcontrols2 : MonoBehaviour
 {
 
     public float speed;
-    public int Score = 0;
+    public static int Score = 0;
     public int Hp = 0;
-    public int timeleft; 
+    public int timeleft;
 
-    
+    public AudioClip CollectingPoints;
+    public AudioClip CollectingHeath;
+    public AudioClip CollectiongExtraTime;
+    public AudioClip CollisionwithTree;
+    public AudioClip CollisionwithLogs;
+    public AudioClip buttonssounds;
+    private AudioClip audioSource;
 
 
     public Text ShowScore;
     public Text ShowHP;
     public Text ShowTime;
 
+    private AudioSource audio;
+    private Rigidbody rb;
 
 
-
-    void Start()
+    void Awake()
     {
+        audio = GetComponent<AudioSource>();
+        rb = GetComponent<Rigidbody>();
+
+
 
     }
 
@@ -30,8 +41,7 @@ public class wolfcontrols2 : MonoBehaviour
 
         ShowScore.text = "Score: " + Score;
         ShowHP.text = "Health: " + Hp;
-        ShowTime.text = "Time: " + timeleft; 
-       
+        ShowTime.text = "Time: " + timeleft;
 
 
 
@@ -42,15 +52,36 @@ public class wolfcontrols2 : MonoBehaviour
         {
             Hp -= 10;
 
+            audio.clip = CollisionwithTree;
+            audio.Play();
 
         }
-       
 
+        if (other.gameObject.tag == "logs")
+        {
+            Hp -= 10;
+
+            audio.clip = CollisionwithLogs;
+            audio.Play();
+
+        }
+
+        if (other.gameObject.tag == "obsticle")
+        {
+            Hp -= 10;
+
+            audio.clip = CollisionwithTree;
+            audio.Play();
+
+        }
 
         if (other.gameObject.tag == "Score_Pickup")
         {
             Destroy(other.gameObject);
             Score += 10;
+
+            audio.clip = CollectingPoints;
+            audio.Play();
 
         }
 
@@ -58,12 +89,18 @@ public class wolfcontrols2 : MonoBehaviour
         {
             Destroy(other.gameObject);
             Hp += 5;
+
+            audio.clip = CollectingHeath;
+            audio.Play();
         }
 
         if (other.gameObject.tag == "timepickup")
         {
             Destroy(other.gameObject);
-            GameObject.FindObjectOfType<Timer>().ExtendTime(25);  
+            GameObject.FindObjectOfType<Timer>().ExtendTime(25);
+
+            audio.clip = CollectiongExtraTime;
+            audio.Play();
         }
 
 
@@ -72,6 +109,10 @@ public class wolfcontrols2 : MonoBehaviour
 
     void Update()
     {
+
+        bool isGrounded = Physics.Raycast(transform.position, Vector3.down, 1f, 1 << LayerMask.NameToLayer("Ground"));
+        print(isGrounded);
+
         if (Hp <= 0f)
         {
             SceneManager.LoadScene("gameoverlives0");
@@ -92,26 +133,25 @@ public class wolfcontrols2 : MonoBehaviour
         platePosition = Camera.main.ScreenToWorldPoint(
             new Vector3(mouseX, 0, 10f));
 
-        Debug.Log(platePosition);
+        //Debug.Log(platePosition);
 
         //to keep the y position of the plate, we only use the X
-        transform.position =
-            new Vector3(platePosition.x, transform.position.y, 0);
+        transform.position = new Vector3(platePosition.x, transform.position.y, 0);
         //////
-        if (Input.GetKeyDown("space"))
+
+        if (isGrounded && (Input.GetKeyDown("space") || Input.GetButtonDown("Fire1")))//onclick
         {
-            transform.Translate(Vector3.up * 30 * Time.deltaTime, Space.World);
-        }
-        if (Input.GetButtonDown("Fire1"))//onclick
-        {
-            transform.Translate(Vector3.up * 30 * Time.deltaTime, Space.World);
+            rb.AddForce(Vector3.up * 220f);
         }
         //  if (Input.GetButton("Fire2"))// if button is held the character will keep on flying 
         //{
         //   transform.Translate(Vector3.up * 10 * Time.deltaTime, Space.World);
         //}
+
+
         ///////
     }
+
 
 
 }
