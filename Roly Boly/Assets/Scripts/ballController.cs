@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ballController : MonoBehaviour {
@@ -42,7 +41,7 @@ public class ballController : MonoBehaviour {
 
 		if(gameObject.transform.position.y <= -5)
 			{
-				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+				Application.LoadLevel(Application.loadedLevel);
 			}
 			
 		if ((Time.time - startTime) > lengthOfGame) 
@@ -82,7 +81,7 @@ public class ballController : MonoBehaviour {
 		
 		if(other.tag == "cube") 
 		{
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			Application.LoadLevel(Application.loadedLevel);
 		}
 		
 		if(other.tag == "coin") 
