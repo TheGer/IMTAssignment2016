@@ -400,7 +400,7 @@ public class BallController : MonoBehaviour {
 			source.Play ();
 
 			other.gameObject.SetActive (false);
-			speed = 50;
+			speed = 60;
 			GetComponent<Renderer>().material = sonicPill;
 
 		}
