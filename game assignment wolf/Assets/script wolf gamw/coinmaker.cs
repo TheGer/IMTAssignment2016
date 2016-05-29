@@ -8,7 +8,7 @@ public class coinmaker : MonoBehaviour
 
 
     private Transform camPos;
-    private int ranXPos = Random.Range(-20, 20);
+    private int ranXPos = Random.Range(-10, 10);
 
 
     // Use this for initialization
