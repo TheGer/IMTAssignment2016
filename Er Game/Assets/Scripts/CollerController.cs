@@ -20,19 +20,28 @@ public class CollerController : MonoBehaviour {
         {
             //score goes up by one when Heart
             score.addscore();
-            Destroy(otherObject.gameObject);
+            if (gameObject != null)
+            {
+                Destroy(otherObject.gameObject);
+            }
         }
         if (otherObject.tag == "Lungs")
         {
             //score goes up by one when Lungs
             score.addscore();
-            Destroy(otherObject.gameObject);
+            if (gameObject != null)
+            {
+                Destroy(otherObject.gameObject);
+            }
         }
         if (otherObject.tag == "Intestines")
         {
             //score goes up by one when Intestines
             score.addscore();
-            Destroy(otherObject.gameObject);
+            if (gameObject != null)
+            {
+                Destroy(otherObject.gameObject);
+            }
         }
 
     }

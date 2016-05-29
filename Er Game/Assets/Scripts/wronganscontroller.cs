@@ -4,15 +4,11 @@ using UnityEngine.UI;
 
 public class wronganscontroller : MonoBehaviour
 {
-    public GameObject ANS4;
- //  public void OnEnable()
- //   {
- //       ANS4.SetActive(true);
- //   }
+    public GameObject ans4;
 
-   public void OnDisable()
+    public void worngbutton()
     {
-        ANS4.SetActive(false);
+        ans4.SetActive(false);
     }
 }
 

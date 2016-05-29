@@ -42,7 +42,7 @@ public class Score : MonoBehaviour {
     public void rightans3()
     {
         score += 10;
-        Application.LoadLevel(8);
+        SceneManager.LoadScene(8);
     }
     // this will not add 10 points to the score
     public void rightans4()
@@ -60,7 +60,7 @@ public class Score : MonoBehaviour {
     public void rightans6()
     {
         score += 10;
-        Application.LoadLevel(12);
+        SceneManager.LoadScene(12);
 
     }
     // this will not add 10 points to the score
@@ -87,7 +87,7 @@ public class Score : MonoBehaviour {
     {
         UpdateUI();
         // when scene 18 is loaded it will show the game over scene where if the user gets over or equal to 100 it will save you have won!
-        if (Application.loadedLevel == 18)
+        if (SceneManager.GetActiveScene().name == "GameOver")
         {
             if (score >= 100)
             {

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/BonesSceens/rib.unity
+- path: Assets/MainGameSceens/Main Menu.unity
   isLoaded: 1
   isActive: 1
