@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3d1967b5303ead84aa8ecb11770a0130
+timeCreated: 1464087900
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - heart: {instanceID: 0}
+  - lungs: {instanceID: 0}
+  - Intestines: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
