@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d2188557703ba4c438bff6b082418bf3
+timeCreated: 1460894585
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - bluePill: {instanceID: 0}
+  - blackPill: {instanceID: 0}
+  - redPill: {instanceID: 0}
+  - greenBox: {instanceID: 0}
+  - brownPill: {instanceID: 0}
+  - Gpill: {fileID: 2100000, guid: 929118c040196994fa322e496b043baf, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
